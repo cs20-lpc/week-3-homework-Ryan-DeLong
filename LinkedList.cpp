@@ -1,7 +1,7 @@
 #include "LinkedList.hpp"
 
 LinkedList::LinkedList() : size(0) {
-    head = new Node();   // sentinel
+    head = new Node();   
     head->next = nullptr;
 }
 
@@ -34,7 +34,7 @@ void LinkedList::insertOrUpdateEnd(int id, const std::string& name, double gpa) 
         return;
     }
 
-    // Insert at end by traversal (no tail pointer)
+    
     Node* cur = head;
     while (cur->next) cur = cur->next;
     cur->next = new Node(Student(id, name, gpa));

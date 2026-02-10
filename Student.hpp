@@ -7,7 +7,7 @@
 
 class Student {
 public:
-    // Separate course linked list type (manual pointers, no STL)
+   
     class CourseList {
     private:
         struct Node {

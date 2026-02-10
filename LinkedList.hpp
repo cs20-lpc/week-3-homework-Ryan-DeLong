@@ -19,13 +19,13 @@ public:
     LinkedList();
     ~LinkedList();
 
-    // Insert at end; if id exists, UPDATE that student instead of inserting
+    
     void insertOrUpdateEnd(int id, const std::string& name, double gpa);
 
     // delete: return 1 if deleted, 0 if not found
     int deleteById(int id);
 
-    // search: returns pointer to internal Student (or nullptr)
+    // search: returns pointer to internal Student 
     Student* findById(int id);
 
     void displayAll(std::ostream& os) const;
